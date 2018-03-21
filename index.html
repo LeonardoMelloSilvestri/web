@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    	<meta charset="UTF-8">
+   		<link rel="stylesheet" href="style.css">
+		<title>Formulário</title>
+		<link rel="shortcut icon" type="image/x-icon" href="title.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+    	<form>
+			<fieldset id="usuario">
+				<legend>Identificação do Aluno</legend>
+				<div id="imageUser"></div>
+				<p><label for="cNome">Nome completo:</label> <input type="text" name="tNome" id="cNome" size="25" maxlength="60" placeholder=" Digite o nome completo do aluno"/></p>
+				<p><label for="cData">Data de nascimento:</label> <input type="date" name="tData" id="cData"/></p>
+				<p><label for="cResponsavel">Nome do responsável:</label> <input type="text" name="tResponsavel" id="cResponsavel" maxlength="60" placeholder=" Responsável pelo aluno"/></p>
+				<fieldset id="sexo"><legend>Sexo</legend>
+					<input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label><br/>
+					<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+				</fieldset>
+				<fieldset id="ano"><legend>Ano</legend>
+					<input type="radio" name="tAno" id="cPrimeiroAno"/><label for="cPrimeiroAno">1ºAno</label><br/>
+					<input type="radio" name="tAno" id="cSegundoAno"/><label for="cSegundoAno">2ºAno</label><br/>
+					<input type="radio" name="tAno" id="cTerceiroAno"/><label for="cTerceiroAno">3ºAno</label>
+				</fieldset>
+				<p><label for="cTurma">Turma:</label> <input type="number" maxlenght="4" min="1" max="9999" name="tTurma" id="cTurma"/></p>
+				<fieldset id="turno"><legend>Turno</legend>
+				    <input type="radio" name="turno" id="cMatutino"/><label for="cMatutino">Matutino</label></br/>
+				    <input type="radio" name="turno" id="cVespertino"/><label for="cVespertino">Vespertino</label></br/>
+				    <input type="radio" name="turno" id="cNoturno"/><label for="cNoturno">Noturno</label>
+				</fieldset>
+		  	</fieldset>
+			
+			<fieldset id="qualquerMerda">
+				<fieldset id="situacao"><legend>Situação</legend>
+				 	<input type="radio" name="causa" id="cTransferencia"/> <label for="cTransferencia">Transferência</label><br/>
+				    <input type="radio" name="causa" id="cDesistente"/> <label for="cDesistente">Desistente</label><br/>
+				    <input type="radio" name="causa" id="cOutros"/> <label for="cOutros">Outros</label>
+				</fieldset>
+				<fieldset id="motivos"><legend>Motivos</legend>
+				    <input type="checkbox" id="abandono"><label for="abandono">Abandonou as aulas</label><br/>
+				    <input type="checkbox" id="bully"><label for="bully">Bullying</label><br/>
+				    <input type="checkbox" id="acompanhamento"><label for="acompanhamento">Dificuldade de acompanhando do curso</label><br/>
+				    <input type="checkbox" id="acesso"><label for="acesso">Dificuldades de acesso</label><br/>
+				    <input type="checkbox" id="turnoDesejado"><label for="turnoDesejado">Falta de vaga no turno desejado</label><br/>
+				    <input type="checkbox" id="interesse"><label for="interesse">Falta de interesse</label><br/>
+				    <input type="checkbox" id="gravidez"><label for="gravidez">Gravidez</label><br/>
+				    <input type="checkbox" id="horario"><label for="horario">Horário imcompatível com o curso</label><br/>
+				    <input type="checkbox" id="inseguranca"><label for="inseguranca">Insegurança no entorno</label><br/>
+				    <input type="checkbox" id="cidade"><label for="cidade">Mudança de cidade</label><br/>
+				    <input type="checkbox" id="trabalho"><label for="trabalho">Necessidade de trabalhar</label><br/>
+				    <input type="checkbox" id="saude"><label for="saude">Problemas de saúde com o aluno</label><br/>
+				    <input type="checkbox" id="saudeAluno"><label for="saudeAluno">Problemas de saúde com o grupo familiar</label><br/>
+				    <input type="checkbox" id="problemasFamilia"><label for="problemasFamilia">Problemas familiares</label><br/>
+				    <input type="checkbox" id="reprovacao"><label for="reprovacao">Reprovação</label><br/>
+				    <input type="checkbox" id="outros"><label for="outros">Outros</label>
+				</fieldset>
+				
+				<fieldset id="detalharMotivo"><legend>Detalhar Motivo</legend>
+				    <textarea name="tMensagem" id="cMensagem" cols="37" rows="10" placeholder=" Digite aqui mais detalhes sobre a evasão do aluno"/></textarea>
+				</fieldset>
+				
+			</fieldset>
+			
+			<fieldset id="requerente"><legend>Requerente</legend>
+			       <p><label for="cNomeRequerente">Nome:</label> <input type="text" name="tNomeRequerente" id="cNomeRequerente" size="20" maxlength="60" placeholder=" Digite aqui seu nome"/></p>
+			       <p><label for="cDataRequerente">Data:</label> <input type="date" name="tDataRequerente" id="cDataRequerimento"/></p>
+			</fieldset>
+			
+			<fieldset id="responsavelAtendimento"><legend>Responsável pelo atendimento</legend>
+			       <p><label for="cNomeResponsavelAtedimento">Nome:</label> <input type="text" name="tNomeResponsavelAtendimento" id="cNomeResponsavelAtedimento" size="20" maxlength="60" placeholder=" Digite aqui seu nome"/></p>
+			</fieldset>
+			
+			    <center><input type="image" src="submit.png" name="tEnviar" id="cEnviar" onclick="this.form.submit()"/></center>
+				<div><a href="#top"><img id="backToTop" src="arrowTop.png"></a></div>
+			
+		</form>
+		
+  </body>
+
+</html>
